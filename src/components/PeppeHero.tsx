@@ -1,4 +1,5 @@
 import React from 'react';
+import logo from '../assets/img/logo.png';
 
 export default function PeppeHero() {
   return (
@@ -9,7 +10,7 @@ export default function PeppeHero() {
             <div className="mb-4 d-flex justify-content-center">
               <div className="bg-white p-2 rounded-3 shadow-sm" style={{ maxWidth: '200px' }}>
                 <img 
-                  src="/src/assets/img/logo.png" 
+                  src={logo} 
                   alt="PEPPEai Logo" 
                   className="img-fluid" 
                   style={{ maxHeight: '120px' }}

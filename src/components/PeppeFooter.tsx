@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function PeppeFooter() {
   return (
@@ -19,7 +20,7 @@ export default function PeppeFooter() {
                 </a>
               </p>
             </div>
-            <div className="d-flex justify-content-center">
+            <div className="d-flex justify-content-center gap-4 align-items-center">
               <a 
                 href="https://creativecommons.org/licenses/by/4.0/deed.it" 
                 target="_blank" 
@@ -32,6 +33,9 @@ export default function PeppeFooter() {
                   className="img-fluid"
                 />
               </a>
+              <Link to="/credits" className="text-white text-decoration-none border border-white rounded-pill px-3 py-1 hover-scale transition-all">
+                Crediti e Licenza
+              </Link>
             </div>
           </div>
         </div>

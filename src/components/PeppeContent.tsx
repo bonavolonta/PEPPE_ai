@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function PeppeContent() {
   return (
@@ -13,14 +14,12 @@ export default function PeppeContent() {
             
             <div className="p-4 p-md-5 bg-light rounded-4 shadow-sm border">
               <div className="placeholder-content text-center py-5">
-                <p className="fst-italic text-secondary mb-0">
-                  [PLACEHOLDER — Contenuto da definire dal team PEPPE AI]
+                <p className="fst-italic text-secondary mb-4">
+                  Inizia il percorso per scoprire cosa si nasconde oltre il senso comune sull'Intelligenza Artificiale.
                 </p>
-                <div className="mt-4 text-start">
-                  <p className="text-muted">
-                    Suggerimento struttura: miti vs realtà, domande provocatorie, testo narrativo, o citazione + approfondimento.
-                  </p>
-                </div>
+                <Link to="/step1" className="btn btn-primary btn-lg rounded-pill px-5 shadow-sm">
+                  Inizia il percorso: Cosa conosci già? →
+                </Link>
               </div>
             </div>
           </div>
